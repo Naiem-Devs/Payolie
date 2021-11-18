@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Ad Portal</title>
+    <link rel="stylesheet" href="assets/css/styleAP.css">
+    <link rel="stylesheet" href="assets/css/footerAP.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+.select {
+  position: relative;
+  min-width: 200px;
+}
+.select svg {
+  position: absolute;
+  right: 12px;
+  top: calc(50% - 3px);
+  width: 14px;
+  height: 9px;
+  stroke-width: 2px;
+  stroke: #49214D;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.select select {
+  -webkit-appearance: none;
+  padding: 7px 40px 7px 0px;
+  width: 100%;
+  /* border: 1px solid #e8eaed; */
+  border-radius: 5px;
+  background: #fff;
+  /* box-shadow: 0 1px 3px -2px #9098a9; */
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  transition: all 150ms ease;
+}
+.select select:required:invalid {
+  color: #49214D;
+}
+.select select option {
+  color: #223254;
+}
+.select select option[value=""][disabled] {
+  display: none;
+}
+.select select:focus {
+  outline: none;
+  /* border-color: #07f; */
+  /* box-shadow: 0 0 0 2px rgba(0,119,255,0.2); */
+}
+.select select:hover + svg {
+  stroke: #07f;
+}
+.sprites {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+
+
+
+.custom_radio{
+   margin: 20px;
+}
+.custom_radio input[type="radio"]{
+  display: none;
+}
+.custom_radio input[type="radio"] + label{
+  position: relative;
+  display: inline-block;
+  padding-left: 1.5em;
+  margin-right: 2em;
+  cursor: pointer;
+  line-height: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.custom_radio input[type="radio"] + label:before,
+.custom_radio input[type="radio"] + label:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  color: white;
+  font-family: Times;
+  border-radius: 50%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.custom_radio input[type="radio"] + label:before {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em white;
+}
+.custom_radio input[type="radio"] + label:hover:before {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  box-shadow: inset 0 0 0 0.3em white, inset 0 0 0 1em #c6c6c6;
+}
+.custom_radio input[type="radio"]:checked + label:before {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em #4CAF50;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#"><img src="./images/Payolie-Logo-1.png" alt="logo"></a>
+                </div>
+                <div class="search-bar">
+                    <form>
+                        <select name="all" id="option">
+                            <option selected="selected" value="All">All</option>
+                            <option value="All">All</option>
+                            <option value="All">All</option>
+                        </select>
+                        <input type="text" placeholder="Search" name="search" class="search">
+                        <button class="search-icon" type="submit"><img src="./images/search.svg"></button>
+                    </form>
+                </div>
+                <div class="user">
+                    <div class="cart-container"><a href="#"><img src="./images/cart.svg"></a>
+                        <div class="cart-notification">6</div>
+                    </div>
+
+                    <div class="bell-container">
+                        <a href="#" class="bell"><img src="./images/bell.svg"></a>
+                        <div class="bell-circle"></div>
+                    </div>
+
+                    <a href="#"><img class="user-img" src="./images/user.svg"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <section class="shopping-cart-section">
+            <div class="container">
+                <div class="shopping-cart-content">
+                    <div class="shopping-cart-left-content">
+                        <div class="shopping-cart-item-heading">
+                            <h3>Shopping Cart</h3>
+                            <h4>6 Items</h4>
+                        </div>
+                        <div class="shopping-cart-product-details">
+                            <h3>Product Details</h3>
+                            <div class="shopping-cart-quantity">
+                                <h4>Quantity</h4>
+                                <p>Price</p>
+                            </div>
+                        </div>
+
+                        <div class="shopping-cart-cards">
+                            <div class="shopping-cart-card-name">
+                                <img src="./images/msword-img.png">
+                                <div class="shopping-cart-card-details">
+                                    <h5>Windows Office Word</h5>
+                                    <a href="#" class="shopping-cart-remove-btn">Remove</a>
+                                </div>
+                            </div>
+                            <div class="shopping-cart-card-price">
+                                <div class="shopping-cart-card-quantity">
+                                    <div class="button-container">
+                                        <button class="btn decrease">-</button>
+                                        <span id="value">0</span>
+                                        <button class="btn increase">+</button>
+                                      </div>
+                                </div>
+                                <p>$12.99</p>
+                            </div>
+                        </div>
+
+
+                        <div class="shopping-cart-cards">
+                            <div class="shopping-cart-card-name">
+                                <img src="./images/msword-img.png">
+                                <div class="shopping-cart-card-details">
+                                    <h5>Windows Office Word</h5>
+                                    <a href="#" class="shopping-cart-remove-btn">Remove</a>
+                                </div>
+                            </div>
+                            <div class="shopping-cart-card-price">
+                                <div class="shopping-cart-card-quantity">
+                                    <div class="button-container">
+                                        <button class="btn decrease">-</button>
+                                        <span id="value">0</span>
+                                        <button class="btn increase">+</button>
+                                      </div>
+                                </div>
+                                <p>$12.99</p>
+                            </div>
+                        </div>
+
+
+                        <div class="shopping-cart-cards">
+                            <div class="shopping-cart-card-name">
+                                <img src="./images/msword-img.png">
+                                <div class="shopping-cart-card-details">
+                                    <h5>Windows Office Word</h5>
+                                    <a href="#" class="shopping-cart-remove-btn">Remove</a>
+                                </div>
+                            </div>
+                            <div class="shopping-cart-card-price">
+                                <div class="shopping-cart-card-quantity">
+                                    <div class="button-container">
+                                        <button class="btn decrease">-</button>
+                                        <span id="value">0</span>
+                                        <button class="btn increase">+</button>
+                                      </div>
+                                </div>
+                                <p>$12.99</p>
+                            </div>
+                        </div>
+
+
+                        <div class="shopping-cart-cards">
+                            <div class="shopping-cart-card-name">
+                                <img src="./images/msword-img.png">
+                                <div class="shopping-cart-card-details">
+                                    <h5>Windows Office Word</h5>
+                                    <a href="#" class="shopping-cart-remove-btn">Remove</a>
+                                </div>
+                            </div>
+                            <div class="shopping-cart-card-price">
+                                <div class="shopping-cart-card-quantity">
+                                    <div class="button-container">
+                                        <button class="btn decrease">-</button>
+                                        <span id="value">0</span>
+                                        <button class="btn increase">+</button>
+                                      </div>
+                                </div>
+                                <p>$12.99</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="shopping-cart-cards">
+                            <div class="shopping-cart-card-name">
+                                <img src="./images/msword-img.png">
+                                <div class="shopping-cart-card-details">
+                                    <h5>Windows Office Word</h5>
+                                    <a href="#" class="shopping-cart-remove-btn">Remove</a>
+                                </div>
+                            </div>
+                            <div class="shopping-cart-card-price">
+                                <div class="shopping-cart-card-quantity">
+                                    <div class="button-container">
+                                        <button class="btn decrease">-</button>
+                                        <span id="value">0</span>
+                                        <button class="btn increase">+</button>
+                                      </div>
+                                </div>
+                                <p>$12.99</p>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="shopping-cart-cards">
+                            <div class="shopping-cart-card-name">
+                                <img src="./images/msword-img.png">
+                                <div class="shopping-cart-card-details">
+                                    <h5>Windows Office Word</h5>
+                                    <a href="#" class="shopping-cart-remove-btn">Remove</a>
+                                </div>
+                            </div>
+                            <div class="shopping-cart-card-price">
+                                <div class="shopping-cart-card-quantity">
+                                    <div class="button-container">
+                                        <button class="btn decrease">-</button>
+                                        <span id="value">0</span>
+                                        <button class="btn increase">+</button>
+                                      </div>
+                                </div>
+                                <p>$12.99</p>
+                            </div>
+                        </div>
+
+
+                        <div class="shopping-cart-cards">
+                            <div class="shopping-cart-card-name">
+                                <img src="./images/msword-img.png">
+                                <div class="shopping-cart-card-details">
+                                    <h5>Windows Office Word</h5>
+                                    <a href="#" class="shopping-cart-remove-btn">Remove</a>
+                                </div>
+                            </div>
+                            <div class="shopping-cart-card-price">
+                                <div class="shopping-cart-card-quantity">
+                                    <div class="button-container">
+                                        <button class="btn decrease">-</button>
+                                        <span id="value">0</span>
+                                        <button class="btn increase">+</button>
+                                      </div>
+                                </div>
+                                <p>$12.99</p>
+                            </div>
+                        </div>
+
+
+                        <div class="shopping-cart-cards">
+                            <div class="shopping-cart-card-name">
+                                <img src="./images/msword-img.png">
+                                <div class="shopping-cart-card-details">
+                                    <h5>Windows Office Word</h5>
+                                    <a href="#" class="shopping-cart-remove-btn">Remove</a>
+                                </div>
+                            </div>
+                            <div class="shopping-cart-card-price">
+                                <div class="shopping-cart-card-quantity">
+                                    <div class="button-container">
+                                        <button class="btn decrease">-</button>
+                                        <span id="value">0</span>
+                                        <button class="btn increase">+</button>
+                                      </div>
+                                </div>
+                                <p>$12.99</p>
+                            </div>
+                        </div>
+
+
+                        <div class="shopping-cart-cards">
+                            <div class="shopping-cart-card-name">
+                                <img src="./images/msword-img.png">
+                                <div class="shopping-cart-card-details">
+                                    <h5>Windows Office Word</h5>
+                                    <a href="#" class="shopping-cart-remove-btn">Remove</a>
+                                </div>
+                            </div>
+                            <div class="shopping-cart-card-price">
+                                <div class="shopping-cart-card-quantity">
+                                    <div class="button-container">
+                                        <button class="btn decrease">-</button>
+                                        <span id="value">0</span>
+                                        <button class="btn increase">+</button>
+                                      </div>
+                                </div>
+                                <p>$12.99</p>
+                            </div>
+                        </div>
+
+
+                        <div class="shopping-cart-cards">
+                            <div class="shopping-cart-card-name">
+                                <img src="./images/msword-img.png">
+                                <div class="shopping-cart-card-details">
+                                    <h5>Windows Office Word</h5>
+                                    <a href="#" class="shopping-cart-remove-btn">Remove</a>
+                                </div>
+                            </div>
+                            <div class="shopping-cart-card-price">
+                                <div class="shopping-cart-card-quantity">
+                                    <div class="button-container">
+                                        <button class="btn decrease">-</button>
+                                        <span id="value">0</span>
+                                        <button class="btn increase">+</button>
+                                      </div>
+                                </div>
+                                <p>$12.99</p>
+                            </div>
+                        </div>
+
+
+                        <div class="shopping-cart-cards">
+                            <div class="shopping-cart-card-name">
+                                <img src="./images/msword-img.png">
+                                <div class="shopping-cart-card-details">
+                                    <h5>Windows Office Word</h5>
+                                    <a href="#" class="shopping-cart-remove-btn">Remove</a>
+                                </div>
+                            </div>
+                            <div class="shopping-cart-card-price">
+                                <div class="shopping-cart-card-quantity">
+                                    <div class="button-container">
+                                        <button class="btn decrease">-</button>
+                                        <span id="value">0</span>
+                                        <button class="btn increase">+</button>
+                                      </div>
+                                </div>
+                                <p>$12.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shopping-cart-right-content">
+
+                        <div class="visa_num">
+                            <h3>Saved payment options</h3>
+                            <form action="#">
+                                <p class="visa">
+                                    <span class="radio_btn active"></span>
+                                    <img src="assets/images/visa.png" alt=""> Ending in •••• 4186
+                                </p>
+                              </form>
+                        </div>
+
+                        <div class="drop-d-s">
+
+                            <label class="select" for="slct">
+                                <select id="slct" required="required">
+                                  <option value="" disabled="disabled" selected="selected">More payment options</option>
+                                  <option value="#">One</option>
+                                  <option value="#">Two</option>
+                                  <option value="#">Three</option>
+                                  <option value="#">Four</option>
+                                  <option value="#">Five</option>
+                                  <option value="#">Six</option>
+                                  <option value="#">Seven</option>
+                                </select>
+                                <svg>
+                                  <use xlink:href="#select-arrow-down"></use>
+                                </svg>
+                              </label>
+                              <!-- SVG Sprites-->
+                              <svg class="sprites">
+                                <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                                  <polyline points="1 1 5 5 9 1"></polyline>
+                                </symbol>
+                              </svg>
+                        </div>
+
+                        <div class="order-summary">
+                            <h4 class="order-summary-heading">Order Summary</h4>
+
+                            <div class="order-summary-item">
+                                <p>Items</p>
+                                <p class="order-summary-item-price">$51.96</p>
+                            </div>
+                            <div class="order-summary-shipping">
+                                <p>Shipping</p>
+                                <p class="order-summary-shipping-price">$0.00</p>
+                            </div>
+
+                            <div class="order-before-tax">
+                                <p>Total before tax</p>
+                                <p class="order-summary-item-price">$51.96</p>
+                            </div>
+                            <div class="order-after-tax">
+                                <p>Estimated tax to be collected</p>
+                                <p class="order-summary-shipping-price">$51.96</p>
+                            </div>
+                            <div class="grand-total">
+                                <h2 class="order-total">Order Total</h2>
+                                <h4 class="order-total-cost">$51.96</h4>
+                            </div>
+                            
+                        <a href="#" class="order-btn">Pay</a>
+                        <a href="#" class="get-free-btn">Stream To Pay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+            const radioBtn = document.querySelector('.visa')
+            const radioBtns = document.querySelector('.radio_btn')
+
+
+if(radioBtn) {
+    radioBtn.addEventListener('click', () => {
+        radioBtns.classList.toggle('active')
+    })
+          // Breadcrumb Slider
+          const arrowBtn = document.querySelector('.expand-arrow');
+            const expandBox = document.querySelector('.expand-box');
+
+            arrowBtn.addEventListener('click', function(){
+                expandBox.classList.toggle('close-box');
+                arrowBtn.classList.toggle('rotate');
+            });
+
+    const slider = document.querySelector('.slider-inner');
+    const progressBar = document.querySelector('.prog-bar-inner');
+
+    let sliderGrabbed = false;
+
+    slider.parentElement.addEventListener('scroll', (e) => {
+        progressBar.style.width  = `${getScrollPercentage()}%`
+    })
+
+    slider.addEventListener('mousedown', (e) => {
+        sliderGrabbed = true;
+        slider.style.cursor = 'grabbing';
+    })
+
+    slider.addEventListener('mouseup', (e) => {
+        sliderGrabbed = false;
+        slider.style.cursor = 'grab';
+    })
+
+    slider.addEventListener('mouseleave', (e) => {
+        sliderGrabbed = false;
+    })
+
+    slider.addEventListener('mousemove', (e) => {
+        if(sliderGrabbed){
+            slider.parentElement.scrollLeft -= e.movementX;
+        }
+    })
+
+
+    function getScrollPercentage(){
+      return ((slider.parentElement.scrollLeft / (slider.parentElement.scrollWidth - slider.parentElement.clientWidth) ) * 100);
+    }
+
+
+    }
+
+    </script>
+
+</body>
+</html>

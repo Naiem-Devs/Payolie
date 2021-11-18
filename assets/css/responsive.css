@@ -1,0 +1,1007 @@
+/* Big screen :1200px. */
+@media (min-width: 1501px) and (max-width: 1900px) {
+    .Wayne-slider.owl-carousel.owl-loaded.owl-drag {
+        height: 610px;
+        max-width: 890px;
+    }
+    
+    .Wayne_card {
+        width: 100%;
+    }
+    
+    .Wayne-WRP {
+        max-width: 100%;
+    }
+    .streaming-data table tbody tr td:last-child {
+        padding-left: 50px;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .Wayne-slider.owl-carousel.owl-loaded.owl-drag {
+        height: 610px;
+        max-width: 890px;
+    }
+    
+    .Wayne_card {
+        width: 100%;
+    }
+    
+    .owl-item.active {
+    }
+    
+    .Wayne-WRP {
+        max-width: 100%;
+    }
+    .w-600 ul li a {
+        margin: 0 6px;
+    }
+    .color_vdo i {
+        max-width: 100%;
+        height: 400px;
+    }
+    .checkoutLeftWrp {
+        margin-left: 50px;
+    }
+    
+    h3#cit {
+        margin-left: 50px;
+    }
+    
+    .checkoutRightWrp {
+        max-width: 460px;
+    }
+
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Wayne-slider.owl-carousel.owl-loaded.owl-drag {
+        height: 571px;
+        max-width: 530px;
+        margin: auto;
+    }
+    
+    .Wayne_card {
+        width: 100%;
+    }
+    
+    .Wayne-WRP {
+        max-width: 100%;
+    }
+    .Wayne_card i {
+        width: 200px;
+        height: 200px;
+    }
+    .video-modal {
+        width: 100%;
+    }
+    footer.artist .row {
+        flex-wrap: wrap;
+    }
+    
+    footer.artist .row .col.pt-5 {
+        width: 300px;
+        max-width: 400px;
+        flex-basis: unset;
+    }
+    .color_vdo i {
+        max-width: 100%;
+        height: 330px;
+    }
+    .checkoutRightWrp {
+        margin-left: auto;
+        max-width: max-content;
+        padding-left: 100px;
+    }
+    
+    .checkoutLeftWrp {
+        margin-right: -30px;
+        margin-left: 30px;
+    }
+    
+    h3#cit {
+        margin-left: 30px;
+    }
+    .order-summary {
+        padding-bottom: 1px;
+        max-width: 500px;
+        margin: auto;
+    }
+
+
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    label.Find-text {
+        font-size: 30px;
+    }
+    .find_cont.Wayne label{
+    font-size: 40px;
+}
+.Wayne-slider.owl-carousel.owl-loaded.owl-drag {
+    height: 610px;
+    max-width: 529px;
+}
+
+.Wayne_card {
+    width: 100%;
+}
+.Wayne-WRP {
+    max-width: 100%;
+}
+.Wayne_card i {
+    width: 200px;
+    height: 200px;
+}
+.Wayne-WRP {
+    max-width: 100%;
+}
+.bg-whitesmoke .row {
+    flex-direction: column-reverse;
+}
+
+.main-header h1 {
+    width: 100%;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+.video-modal {
+    margin: auto;
+    width: 400px;
+}
+
+.container.art.pt-5 .row:first-child,.container.art.pt-5 .row:last-child {flex-direction: column-reverse;}
+
+.container.art.pt-5 {
+    max-width: 450px;
+}
+
+.bg-pink .container {
+    max-width: 500px;
+}
+.container.HowCanIGet.py-5 {
+    max-width: 500px;
+}
+
+footer.artist .container {
+    padding-left: 20px;
+    /* margin-left: 80px; */
+    margin: 0 20px;
+}
+
+footer.artist a {
+    margin: 0;
+}
+
+.pt-3.pt-lg-4 {
+    width: max-content;
+}
+
+footer.artist {
+    overflow: hidden;
+    padding: 50px;
+}
+
+.row.Categories .col {
+    width: 200px !important;
+    max-width: 200px;
+}
+
+.row.Categories {
+    align-items: initial;
+}
+
+.row.Categories i {
+    height: 60px;
+}
+
+.color_vdo i {
+    max-width: 100%;
+    height: 335px;
+}
+
+.bg-pink.bg-p-text .row.align-items-center {
+    flex-direction: column-reverse;
+}
+.music-card.crd-main.crd-bg {
+    max-width: 280px;
+}
+.mb_pro-box {
+    width: 98%;
+}
+.upload-content input {
+    width: 290px;
+}
+
+.upload-picture {
+    height: 331px;
+}
+
+.upload-picture-container {
+    align-items: center;
+}
+.prv-nxt.aap5 {display: flex;margin-top: 50px;max-width: 500px;width: 100%;justify-content: space-around;}
+
+.prv-nxt.aap5 .btm-logo.skip-p {
+    position: unset;
+}
+
+section.Budget-section.upload-section {
+    flex-direction: column;
+}
+.btm-logo.skip-p .btm-logo.skip-p {
+    position: unset;
+}
+
+.prv-nxt .btm-logo.skip-p {
+    position: unset;
+}
+section.upload-section.Pick {
+    margin: 188px 100px 100px;
+    flex-direction: column;
+}
+.prv-nxt {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-around;
+    margin: 42px 0 50px;
+}
+.rld-banner {
+    padding: 50px 30px 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+.rld-banner_link ul {display: flex;text-align: center;margin: 35px auto 20px;width: 100%;justify-content: space-around;padding: 0;}
+
+.rld-banner_link ul li a {
+    font-size: 22px;
+    margin: 10px;
+}
+
+.rld-banner_link h4 {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.rld-banner_link {
+    margin-top: 50px;
+}
+.pic_upload {
+    display: block;
+    text-align: center;
+}
+
+.pic_upload i {
+    margin: auto;
+    margin-bottom: 29px;
+    padding: 2px;
+}
+
+.pic_upload_cont a {width: 200px;margin: auto;}
+.checkout-area {
+    margin: 176px 0 0;
+    /* height: 100%; */
+}
+
+.checkoutRightWrp {
+    max-width: max-content;
+}
+
+.checkoutRightWrp h2 {
+    font-size: 30px;
+    width: 100%;
+    transform: unset;
+    text-align: center;
+}
+
+.checkoutLeftWrp {
+    margin-bottom: 130px;
+}
+
+.checkout-area:before {
+    width: 100%;
+    right: 0;
+    top: 100%;
+}
+.doubleRow {
+    margin: auto;
+    margin-bottom: 19px;
+}
+
+label.Credit_card {
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.toggle_btn {
+    max-width: 366px;
+    margin: auto;
+}
+
+.checkoutRightWrp button {
+    margin: auto;
+    margin-top: 50px;
+}
+.ckb_label {
+    max-width: 360px;
+}
+
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+    label.Find-text {
+        font-size: 24px;
+        text-align: center;
+    }
+
+.find-box {
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.find-box a svg {
+    width: 24px;
+    height: 24px;
+}
+
+.find-box a {
+    right: 12px;
+}
+
+.find-box input {
+    font-size: 20px;
+    padding: 0 30px;
+    padding-right: 45px;
+}
+.find_cont.Wayne label{
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+.Wayne-WRP {
+    max-width: 100%;
+}
+.Wayne-slider.owl-carousel.owl-loaded.owl-drag {
+    max-width: 285px;
+    margin: auto;
+}
+
+.Wayne_card {
+    width: max-content;
+}
+
+.Wayne-slider .owl-nav button {
+    display: none;
+}
+ 
+.video-modal {
+    margin: auto;
+    width: 280px;
+}
+
+.container.art.pt-5 .row:first-child,.container.art.pt-5 .row:last-child {flex-direction: column-reverse;}
+
+.container.art.pt-5 {
+    max-width: 450px;
+}
+
+.bg-pink .container {
+    max-width: 500px;
+}
+.container.HowCanIGet.py-5 {
+    max-width: 500px;
+}
+
+footer.artist .container {
+    /* margin-left: 20px; */
+    width: 100%;
+}
+
+footer.artist a {
+    margin: 0;
+}
+.bg-whitesmoke .row {
+    flex-direction: column-reverse;
+}
+.bottom p {
+    text-align: center;
+    font-size: 14px;
+    max-width: 280px;
+    margin: auto;
+}
+
+.bottom p a {
+    display: block;
+}
+
+footer.artist h5 {
+    margin-bottom: -5px;
+}
+footer.artist {
+    padding: 25px 0 50px;
+}
+
+footer.artist .col {
+    width: 348px !important;
+    min-width: unset;
+}
+
+footer.artist .col .pt-3 {
+    width: max-content !important;
+}
+
+footer.artist .row {
+    justify-content: space-between;
+    margin: auto;
+    /* width: 100%; */
+}
+.video-modal button svg {
+    width: 30px;
+}
+
+.bg-whitesmoke h1 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.container.logos.pb-lg-4 .pt-5 {
+    padding-top: 20px !important;
+}
+
+.art h1 {
+    font-size: 20px;
+}
+
+.para-sub-artist {
+    font-size: 17px;
+    line-height: 1.4;
+    padding-top: 5px !important;
+}
+
+.container.art.pt-5 .row.align-items-center.pt-5 {
+    padding-top: 1px !important;
+}
+.col-lg-3.col-md-6.pt-5 {}
+
+.bg-pink {
+    text-align: center;
+}
+
+.bg-pink h6 {
+    padding-top: 30px !important;
+}
+
+.bg-pink i {
+    margin: auto;
+}
+
+.container.HowCanIGet.py-5 {
+    text-align: center;
+}
+.pt-3.pt-lg-4 {
+    width: max-content;
+}
+
+footer.artist {
+    overflow: hidden;
+    padding: 50px;
+}
+
+.row.Categories .col {
+    width: 200px !important;
+    max-width: 200px;
+}
+
+.row.Categories {
+    align-items: initial;
+}
+
+.row.Categories i {
+    height: 60px;
+}
+
+.color_vdo i {
+    max-width: 100%;
+    height: 335px;
+}
+
+.bg-pink.bg-p-text .row.align-items-center {
+    flex-direction: column-reverse;
+}
+.position-relative.filter {
+    width: max-content;
+    margin-left: auto;
+}
+
+.position-relative.filter select.new {padding-right: 47px;}
+
+
+.music-card.crd-main.crd-bg {
+    max-width: 290px;
+}
+.mb_pro_top_wrp {
+    flex-wrap: wrap;
+}
+
+.mb_pro_top_right {
+    flex-wrap: wrap;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.mb_pro_player {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mb_pro_player_btn {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 380px;
+}
+
+.mb_pro_player_time {
+    margin-left: 0;
+    margin: 25px 0;
+}
+
+.mb_pro-wrp {
+    height: 100%;
+}
+
+.mb_pro_top_left {
+    margin-bottom: 20px;
+    width: max-content;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.mb_pro_top_right h4 {
+    margin-bottom: 20px;
+}
+
+.mb_pro-box {
+    border-radius: 0;
+}
+
+a.mb_pro_down {
+    left: 20px;
+    top: 20px;
+}
+
+a.mb_pro_down svg path {
+}
+
+.mb_pro_song {
+    overflow: auto;
+}
+
+.mb_pro_song::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.mb_pro_song table {
+    width: max-content;
+}
+section.upload-section.us-3 {
+    margin: 100px 0 50px;
+    height: 100%;
+    flex-direction: column;
+}
+
+.btm-logo.skip-p {
+    position: unset;
+}
+.prv-nxt {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 440px;
+    margin-top: 30px;
+}
+
+.prv-nxt .btm-logo.skip-p a {
+    font-size: 16px;
+    width: 110px;
+    padding: 0;
+    height: 45px;
+}
+
+.prv-nxt div#re_right a {
+    width: 45px;
+    height: 45px;
+}
+.man-loding {
+    width: 100%;
+    text-align: center;
+}
+
+.man-loding img {
+    max-width: 350px;
+    width: 90%;
+}
+
+.loding_bar {margin: 50px auto 30px;height: 25px;max-width: 400px;width: 90%;}
+
+.prv-nxt.aap5 {display: flex;margin-top: 50px;max-width: 500px;width: 100%;justify-content: space-around;}
+
+.prv-nxt.aap5 .btm-logo.skip-p {
+    position: unset;
+}
+
+section.Budget-section.upload-section {
+    flex-direction: column;
+}
+
+section.Budget-section.upload-section .sliderContainer .slider,section.Budget-section.upload-section .slider-Container .slider {
+    width: 100%;
+}
+.prv-nxt.aap5 {display: flex;margin-top: 50px;max-width: 500px;width: 100%;justify-content: space-around;}
+
+.prv-nxt.aap5 .btm-logo.skip-p {
+    position: unset;
+}
+
+section.Budget-section.upload-section {
+    flex-direction: column;
+}
+.btm-logo.skip-p .btm-logo.skip-p {
+    position: unset;
+}
+
+.prv-nxt .btm-logo.skip-p {
+    position: unset;
+}
+section.upload-section.Pick {
+    margin: 141px 0px 56px;
+    flex-direction: column;
+}
+.prv-nxt {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-around;
+    margin: 42px 0 50px;
+}
+.product-section {
+    padding: 0 20px;
+}
+.slg-input input {
+    width: 40px;
+    height: 58px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 3px;
+}
+
+.pic_upload_cont.verify h3 {
+    font-size: 35px;
+}
+
+.pic_upload_cont.verify p {
+    font-size: 16px;
+    max-width: 430px;
+    margin: auto;
+}
+
+.pic_upload_cont.verify a {
+    font-size: 14px;
+    padding: 13px 30px;
+}
+
+.slg-input {
+    margin: 30px 0;
+}
+.color-text {
+    font-size: 30px;
+}
+
+.search-box1 {
+    max-width: 400px;
+}
+
+.search-box1 .input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-btn {
+    padding: 5px 7px;
+}
+
+.link-release {
+    font-size: 16px;
+    margin-top: -12px;
+    display: block;
+}
+.rld-banner {
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    width: max-content;
+    margin: auto;
+    text-align: center;
+}
+
+.rld-banner_link ul {/* display: flex; */text-align: center;margin: 35px auto 20px;justify-content: space-around;padding: 0;}
+
+.rld-banner_link ul li a {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.rld-banner_link h4 {
+    /* position: absolute; */
+    left: 50%;
+    top: 0;
+    text-align: left;
+}
+
+.rld-banner_link {
+    margin-top: 50px;
+    width: max-content;
+    margin: auto;
+}
+.release-details h3 {
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+i#re_song {
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+div#RGenre {
+    margin: 30px auto;
+    height: 55px;
+    width: 200px;
+}
+
+.rld-banner_title {
+    margin: 0;
+}
+
+.rld-banner_title h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.rld-banner_title p {
+    font-size: 18px;
+}
+
+div#RGenre .nice-select span {
+    font-size: 15px;
+}
+
+div#RGenre .nice-select {}
+
+.rld-banner_link ul li h4 {
+    font-size: 20px;
+}
+section.find.release {
+    margin: 120px 0 100px;
+}
+
+section.find.release .prv-nxt.aap5 {
+    margin: 10px auto 50px;
+}
+section.find {
+    height: 100%;
+}
+
+.login_form {
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 130px;
+}
+
+.login_form label {
+    width: 100%;
+}
+
+.login_form.Register p {
+    font-size: 14px;
+}
+
+.login {
+    display: block;
+}
+
+.Get.login {
+    display: flex;
+}
+
+.Get.login .login_form {
+    margin: 0;
+}
+
+.pic_upload {
+    display: block;
+    text-align: center;
+}
+
+.pic_upload i {
+    margin: auto;
+    margin-bottom: 29px;
+    padding: 2px;
+    width: 160px;
+    height: 155px;
+}
+
+.pic_upload_cont a {width: 200px;margin: auto;}
+section.find.Profile_rit .btm-logo.skip-p {
+    position: absolute;
+}
+
+.btm-logo.skip-p a {
+    font-size: 17px;
+    width: 110px;
+    padding: 0;
+    height: 50px;
+}
+.pic_upload_cont h3 {
+    font-size: 20px;
+}
+
+.pic_upload_cont p {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+section.find.Profile_rit .login {
+    display: flex;
+}
+.login_form {
+    padding: 30px;
+}
+
+.login_form label {
+    width: 300px;
+    margin-bottom: 15px;
+    max-width: 350px;
+}
+
+.login_form p {
+    font-size: 15px;
+}
+
+.login_form label input {
+    height: 48px;
+}
+
+.login_form button {
+    height: 50px;
+    margin-top: 20px;
+}
+
+.login_form h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.checkout-area {
+    margin: 176px 0 0;
+    /* height: 100%; */
+}
+
+.checkoutRightWrp {
+    max-width: max-content;
+    margin-bottom: 50px;
+}
+
+.checkoutRightWrp h2 {
+    font-size: 24px;
+    width: 100%;
+    transform: unset;
+    text-align: center;
+}
+
+h3#cit {
+    text-align: center;
+}
+
+.checkoutLeftWrp {
+    margin-bottom: 130px;
+}
+
+.checkout-area:before {
+    width: 100%;
+    right: 0;
+    top: 100%;
+}
+.doubleRow label input {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.doubleRow {
+    width: 100%;
+    justify-content: space-between;
+}
+.doubleRow {
+    margin: auto;
+    margin-bottom: 19px;
+    display: block;
+}
+
+label.Credit_card {
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.toggle_btn {
+    max-width: 366px;
+    margin: auto;
+}
+
+.checkoutRightWrp button {
+    margin: auto;
+    margin-top: 50px;
+}
+.ckb_label {
+    max-width: 360px;
+}
+.order-summary {
+    padding-bottom: 50px;
+}
+.shopping-cart-card-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.shopping-cart-card-price p {
+    margin-top: 10px;
+    width: max-content;
+    margin: auto;
+    padding: 0;
+    font-size: 14px;
+}
+.shopping-cart-item-heading {
+    margin-bottom: 20px;
+}
+}
+ 
+/* Large Mobile screen :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+section.file-upload-container {
+    max-width: 419px;
+    width: 100%;
+}
+.budget-section-container{
+    padding: 40px 40px;
+}
+
+}
